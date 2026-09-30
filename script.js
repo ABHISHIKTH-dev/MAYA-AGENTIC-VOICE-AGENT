@@ -11,7 +11,7 @@ const suggestions = document.querySelectorAll(".suggestion");
 
 // Change this to your deployed backend URL if it is
 // hosted separately from your GitHub Pages website.
-const API_URL = "/api/chat";
+const API_URL = "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/api/chat";
 
 function addMessage(text, role) {
   welcome.style.display = "none";
