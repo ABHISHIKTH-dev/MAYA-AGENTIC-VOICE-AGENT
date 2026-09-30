@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maya AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">✦</div>
+        <span>Maya</span>
+      </div>
+
+      <button class="new-chat" id="newChat">
+        <span>＋</span> New chat
+      </button>
+
+      <div class="side-label">YOUR ASSISTANT</div>
+      <div class="side-item active">✦ <span>AI Assistant</span></div>
+      <div class="side-item">◷ <span>Recent chats</span></div>
+
+      <div class="sidebar-bottom">
+        <div class="profile">
+          <div class="avatar">A</div>
+          <div>
+            <strong>My Workspace</strong>
+            <small>Personal assistant</small>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand">✦ Maya</div>
+        <div class="status">
+          <span class="status-dot"></span>
+          AI Assistant
+        </div>
+        <button class="menu-button" id="clearChat">Clear chat</button>
+      </header>
+
+      <section class="conversation" id="conversation">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✦</div>
+          <h1>Good day. I'm Maya.</h1>
+          <p>Your personal AI assistant. How can I help you today?</p>
+
+          <div class="suggestions">
+            <button class="suggestion">
+              <span>✉</span>
+              <strong>Write an email</strong>
+              <small>Draft a professional email</small>
+            </button>
+            <button class="suggestion">
+              <span>⌕</span>
+              <strong>Research a topic</strong>
+              <small>Understand something new</small>
+            </button>
+            <button class="suggestion">
+              <span>▤</span>
+              <strong>Make a plan</strong>
+              <small>Organize my tasks</small>
+            </button>
+            <button class="suggestion">
+              <span>✎</span>
+              <strong>Improve my writing</strong>
+              <small>Rewrite and refine text</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="messages" id="messages"></div>
+      </section>
+
+      <footer class="composer-area">
+        <form class="composer" id="chatForm">
+          <textarea
+            id="userInput"
+            placeholder="Message Maya..."
+            rows="1"
+            aria-label="Message Maya"
+          ></textarea>
+          <button class="send-button" id="sendButton" type="submit">
+            ↑
+          </button>
+        </form>
+        <p class="disclaimer">
+          Maya can make mistakes. Check important information.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
